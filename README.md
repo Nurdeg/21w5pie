@@ -71,13 +71,14 @@ This project was developed with the assistance of Google Gemini, acting as a vir
 ## 🏗️ System Architecture
 
 The system follows a Microservices-based modular architecture:
-
+```mermaid
 graph TD
     A["Frontend (Streamlit)"] <-->|REST API| B["Backend API (FastAPI)"]
     B <--> C{Orchestrator}
     C <-->|Symbolic AI| D["NLP Engine (spaCy)"]
     C <-->|Generative AI| E["Local LLM (Ollama)"]
     C <-->|Vector Storage| F[("Memory (ChromaDB)")]
+```
 
 Orchestrator: The central brain that manages data flow.
 
