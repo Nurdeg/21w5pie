@@ -40,27 +40,7 @@ Uniquely, it features a **RAG (Retrieval-Augmented Generation) Memory System**, 
 
 ---
 
-## 🏗️ System Architecture
-
-The system follows a Microservices-based modular architecture:
-
-```mermaid
-graph TD
-    A[Frontend (Streamlit)] <-->|REST API| B(Backend API - FastAPI)
-    B <--> C{Orchestrator}
-    C <-->|Symbolic AI| D[NLP Engine (spaCy)]
-    C <-->|Generative AI| E[Local LLM (Ollama)]
-    C <-->|Vector Storage| F[(Memory - ChromaDB)]
-
-
-Orchestrator: The central brain that manages data flow.
-
-NLP Engine: Extracts raw facts (Entities).
-
-LLM Provider: Synthesizes facts into insights (Summary, Sentiment).
-
-Memory Store: Saves vectors for future retrieval.
-
+Instruction:
 ⚙️ Installation & Setup
 Prerequisites:
 Python 3.12+
@@ -87,3 +67,23 @@ streamlit run frontend/app.py
 
 🤖 Acknowledgments
 This project was developed with the assistance of Google Gemini, acting as a virtual pair-programmer and architectural consultant. It demonstrates the potential of AI-Assisted Software Engineering in accelerating development cycles and implementing complex patterns like RAG.
+
+## 🏗️ System Architecture
+
+The system follows a Microservices-based modular architecture:
+
+graph TD
+    A["Frontend (Streamlit)"] <-->|REST API| B["Backend API (FastAPI)"]
+    B <--> C{Orchestrator}
+    C <-->|Symbolic AI| D["NLP Engine (spaCy)"]
+    C <-->|Generative AI| E["Local LLM (Ollama)"]
+    C <-->|Vector Storage| F[("Memory (ChromaDB)")]
+
+Orchestrator: The central brain that manages data flow.
+
+NLP Engine: Extracts raw facts (Entities).
+
+LLM Provider: Synthesizes facts into insights (Summary, Sentiment).
+
+Memory Store: Saves vectors for future retrieval.
+
