@@ -58,17 +58,17 @@ python -m spacy download en_core_web_sm
 Pull the model (e.g., Mistral) via Ollama(bash):
 ollama pull mistral
 
-▶️ Usage
+ Usage
 Run the Backend(Bash):
 uvicorn backend.api.main:app --reload
 
 Run the frontend(bash, new terminal):
 streamlit run frontend/app.py
 
-🤖 Acknowledgments
+ Acknowledgments
 This project was developed with the assistance of Google Gemini, acting as a virtual pair-programmer and architectural consultant. It demonstrates the potential of AI-Assisted Software Engineering in accelerating development cycles and implementing complex patterns like RAG.
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The system follows a Microservices-based modular architecture:
 ```mermaid
