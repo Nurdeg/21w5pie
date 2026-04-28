@@ -1,4 +1,4 @@
-# 🧠 Smart Text Analyzer (Local AI + RAG)
+# Smart Text Analyzer (Local AI + RAG)
 
 > **A Privacy-First, Hybrid AI Analysis Platform** > *Developed by Degenbayev Nurkanat* > *Subject: Artificial Intelligence Neural Networks and Generative AI*
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 **Smart Text Analyzer** is an enterprise-grade NLP (Natural Language Processing) tool designed to process, understand, and "remember" unstructured text data. 
 
 Unlike standard cloud-based tools, this project runs **100% locally** using **Ollama (Mistral/Llama3)**, ensuring absolute data privacy. It implements a **Hybrid Intelligence Architecture**, combining classical NLP (spaCy) for precision with Generative AI (LLM) for reasoning.
@@ -18,23 +18,23 @@ Uniquely, it features a **RAG (Retrieval-Augmented Generation) Memory System**, 
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### 1. 🧠 Hybrid Analysis Engine
+### 1.  Hybrid Analysis Engine
 - **Named Entity Recognition (NER):** Detects Organizations, People, and Locations using `spaCy`.
 - **Sentiment & Intent:** Uses Local LLM to determine mood (Positive/Negative) and purpose (Complaint/Inquiry).
 - **Topic Extraction:** Automatically categorizes text into relevant themes.
 
-### 2. 🛡️ Absolute Privacy (Local LLM)
+### 2.  Absolute Privacy (Local LLM)
 - No API keys required. No data leaves the user's machine.
 - Powered by **Ollama**, supporting models like `Mistral`, `Llama3`, or `Gemma`.
 
-### 3. 🗄️ Semantic Memory (RAG)
+### 3.  Semantic Memory (RAG)
 - **Vector Database (ChromaDB):** Converts every analysis into mathematical vectors.
 - **Contextual Search:** Allows users to search by *meaning* (e.g., searching for "bad power" finds "battery issues").
 - **Chat with Data:** Users can ask questions like *"What were the main complaints last week?"* and the AI synthesizes an answer from past records.
 
-### 4. 📊 Premium Visualization & Reporting
+### 4.  Premium Visualization & Reporting
 - **Glassmorphism UI:** Built with Streamlit for a modern, responsive experience.
 - **PDF Reports:** Generates professional, downloadable PDF summaries of any analysis.
 
